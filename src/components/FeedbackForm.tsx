@@ -89,10 +89,25 @@ export default function FeedbackForm() {
     return (
         <div className="w-full max-w-lg mx-auto">
             <div className="text-center mb-10">
+                <div className="flex justify-center mb-6">
+                    <motion.div
+                        initial={{ scale: 0.5, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        transition={{ duration: 0.5 }}
+                        className="w-24 h-24 relative"
+                    >
+                        <div className="absolute inset-0 bg-primary/20 blur-xl rounded-full" />
+                        <img
+                            src="/logo.png"
+                            alt="AIML Club Logo"
+                            className="w-full h-full object-contain relative z-10 drop-shadow-2xl"
+                        />
+                    </motion.div>
+                </div>
                 <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl mb-3 text-white">
                     AIML Club <span className="text-primary italic">Feedback</span>
                 </h1>
-                <p className="text-foreground/60">Help us bridge the gap between AI research and academic excellence.</p>
+                <p className="text-foreground/60 px-4">Help us bridge the gap between AI research and academic excellence.</p>
             </div>
 
             <motion.form
