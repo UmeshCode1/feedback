@@ -1,0 +1,11 @@
+{
+    "name": "sync-to-sheets",
+    "version": "1.0.0",
+    "description": "Sync Appwrite form data to Google Sheets",
+    "main": "src/main.js",
+    "dependencies": {
+        "node-appwrite": "^11.1.0",
+        "google-spreadsheet": "^4.1.1",
+        "google-auth-library": "^9.4.1"
+    }
+}

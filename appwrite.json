@@ -1,0 +1,27 @@
+{
+    "project": "6952d5ec002e7079076f",
+    "functions": [
+        {
+            "id": "sync-to-sheets",
+            "name": "Sync to Sheets",
+            "runtime": "node-18.0",
+            "path": "functions/sync-to-sheets",
+            "entrypoint": "src/main.js",
+            "execute": [],
+            "events": [
+                "databases.aimlclub_feedback.collections.feedback_entries.documents.create"
+            ],
+            "schedule": "",
+            "timeout": 15,
+            "enabled": true,
+            "logging": true,
+            "varnames": [
+                "APPWRITE_DATABASE_ID",
+                "APPWRITE_COLLECTION_ID",
+                "GOOGLE_SHEET_ID",
+                "GOOGLE_CLIENT_EMAIL",
+                "GOOGLE_PRIVATE_KEY"
+            ]
+        }
+    ]
+}
